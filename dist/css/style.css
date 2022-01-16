@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+/* Headings: Weights: 400 */
+/* Body: Weights: 400, 700 */
+/* css global */
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Karla", sans-serif;
+}
+
+.navBar {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 6.66rem;
+}
+.navBar .btn-menu {
+  background: none;
+  border: 1px solid #2b272f;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  color: #2b272f;
+  text-align: center;
+  padding: 0;
+  right: 1.1875rem;
+  position: absolute;
+  cursor: pointer;
+}
+.navBar .btn-menu ion-icon {
+  margin-top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+}
+.navBar img {
+  width: 7.125rem;
+  height: 1.3125;
+}
+
+/*# sourceMappingURL=style.css.map */

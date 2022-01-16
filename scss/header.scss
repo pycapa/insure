@@ -1,0 +1,32 @@
+.navBar{
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 6.66rem;
+    .btn-menu{
+        background: none;
+        border: 1px solid $VeryDarkViolet;
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+        color: $VeryDarkViolet;
+        text-align: center;
+        padding: 0;
+        right: 1.1875rem;
+        position: absolute;
+        cursor: pointer;
+        ion-icon{
+            margin-top: 50%;
+            transform: translateY(-50%);
+            padding: 0;
+        }
+    }
+     img{
+        width: 7.125rem;
+        height: 1.3125;
+    }
+}
+
