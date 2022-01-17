@@ -1,0 +1,57 @@
+
+/* css global */
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $Body;
+    font-size: $font-med;
+    font-weight: $font-w-sm;
+    color: $VeryDarkViolet;
+    line-height: 1.3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $Body;
+    font-weight: $font-w-lg;
+}
+
+.flex{
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-{
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+a, a:active, a:hover{
+    text-decoration: none;
+}
+
+.hide-mobile{
+    @include breakpoint-down(small){
+        display: none;
+    }
+}
+
+.hide-desktop{
+    @include breakpoint-up(small){
+        display: none;
+    }
+}
+

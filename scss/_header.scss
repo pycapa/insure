@@ -1,0 +1,139 @@
+
+// header
+.header{
+    nav{
+        
+        height: 4.525rem;
+        @include breakpoint-down(medium){
+            padding: 1.2rem 1.875rem;
+        }
+        @include breakpoint-up(medium){
+            padding: 1.875rem 10.375rem;
+        }
+    }
+    
+
+    
+    &__logo {
+        height: 1.3125rem;
+        width : 7.125rem;
+    }
+
+    &__menu {  //mobile menu
+        ul li a{
+            text-decoration: none;
+            color: $DarkGrayishViolet;
+
+        }
+    }
+    &__toggle{
+        padding: 0.625rem 0.5rem;
+        border: 1px solid $VeryDarkViolet;
+        > span{
+            display: block;
+            width:17px;
+            height: 2px;
+            background-color: $VeryDarkViolet;
+            transform-origin: 2px 1px;
+            transition: 0.3s ease-in-out;
+            
+            &:not(:last-child){
+                margin-bottom: 3px;
+            }
+        }
+        &.open {
+            >span{
+                margin-left: 3px;
+            } 
+            >span:first-child{
+                transform: rotate(45deg);
+    
+            }
+            >span:nth-child(2){
+                opacity: 0;
+            }
+    
+            >span:last-child{
+                transform: rotate(-45deg);
+    
+            }
+    
+    
+        }
+    
+        
+    }
+
+    
+    &__links{
+        a {
+            text-align: center;
+            font-size: $font-sm;
+            color: $GrayishBlue;
+            margin-right: 1.75rem;
+            letter-spacing: 3px;
+        }
+        .plans {
+            color: black;
+            border: 1px solid black;
+            padding: 0.75rem 2rem;
+        }
+        a:hover:not(.plans){
+            color: black;
+        }
+        .plans:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+
+    &__menu{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 3.1875rem;
+        z-index: 1;
+        a{
+            margin: auto;
+            font-size: $font-med;
+            color: white;
+            z-index: 1;
+            margin-top: 3.125rem;
+        }
+        .plans{
+            color: white;
+            border: 1px solid white;
+        
+        }
+        a:hover:not(.plans){
+            color: $GrayishBlue;
+        }
+        .plans:hover{
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+    }
+
+    
+}
+
+.overlay-show{
+    position: fixed;
+    top: 4.526rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $VeryDarkViolet;
+    >img{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 12.5rem;
+        width: 100%;
+    }
+
+}
+
