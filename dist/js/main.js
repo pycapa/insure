@@ -7,7 +7,7 @@ const body = document.querySelector('body')
 
 mnuBtn.addEventListener('click', function(){
 
-    const img = document.createElement('img')
+   // const img = document.createElement('img')
 
     if(mnuBtn.classList.contains('open')){ // close Hamburger menu
         mnuBtn.classList.remove('open')
@@ -17,10 +17,10 @@ mnuBtn.addEventListener('click', function(){
         body.classList.remove('noscroll')
 
 
-        if (overlay.childElementCount > 0){
+/*         if (overlay.childElementCount > 0){
             overlay.removeChild(overlay.firstElementChild)
         }
-        
+ */        
 
     } else {
         mnuBtn.classList.add('open')
@@ -29,8 +29,8 @@ mnuBtn.addEventListener('click', function(){
         menu.style.display='flex' // open hamberguer menu
         body.classList.add('noscroll')
 
-        img.setAttribute('src',"/images/bg-pattern-mobile-nav.svg")
-        overlay.appendChild(img)
+        //img.setAttribute('src',"/images/bg-pattern-mobile-nav.svg")
+        //overlay.appendChild(img)
 
         overlay.classList.add('overlay-show') 
         

@@ -17,9 +17,10 @@ $Body : 'Karla', sans-serif;
 
 $font-med   : 1rem; //16px
 $font-sm    : 0.75rem; //12px
-$font-lg    : 2rem; //32px
+$font-lg    : 3rem; //32px
 
-$font-w-sm  : 400;
+$font-w-sm  : 200;
+$font-w-md  : 400;
 $font-w-lg  : 700;
 
 
@@ -30,5 +31,5 @@ $screen-md-min: 992px;
 $screen-sm-max: ($screen-md-min - 1);
 $screen-lg-min: 1200px;
 $screen-md-max: ($screen-lg-min - 1);
-$screen-xlg-min: 1200px;
+$screen-xlg-min: 1400px;
 $screen-lg-max: ($screen-xlg-min - 1);
